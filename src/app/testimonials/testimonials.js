@@ -14,10 +14,8 @@ export const Testimonials = () => {
           clssName="h-4/5 w-4/5 bg-cover rounded-md" />
         </div>
         <div classNmae="h-full w-full px-4">
-          <p className="text-orange-500">"</p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-          <p className="text-orange-500">"</p>
 
           <p className="h-auto w-auto font-semibold">Me</p>
           <p className="h-auto w-auto font-semibold">Lorem</p>
