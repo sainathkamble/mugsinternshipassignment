@@ -18,22 +18,22 @@ const scrollToServices = () =>{
 }
 
 const scrollToProjects = () =>{
-  window.scrollTo({ top: 1550, behavior: 'smooth', })
+  window.scrollTo({ top: 1700, behavior: 'smooth', })
 }
 
 const scrollToTestimonials = () =>{
-  window.scrollTo({ top: 2200, behavior: 'smooth', })
+  window.scrollTo({ top: 2300, behavior: 'smooth', })
 }
 
 const scrollToContact = () =>{
-  window.scrollTo({ top: 2700, behavior: 'smooth', })
+  window.scrollTo({ top: 2800, behavior: 'smooth', })
 }
   return (
     <>
     <nav className="h-[20vh] w-full px-10 py-4 flex justify-between items-center">
-      <p className="h-auto w-auto text-4xl text-orange-500">Sainath.io</p>
+      <p className="h-auto w-auto font-bold text-4xl text-orange-500 cursor-pointer">Sainath.io</p>
+      
       <div className="h-auto w-[85vw] flex justify-evenly items-center">
-
       { [
           ["1","Home","./",scrollToHero],
           ["2","About Me","/aboutme",scrollToAboutMe],
@@ -42,10 +42,10 @@ const scrollToContact = () =>{
           ["5","Testimonials","./testimonials",scrollToTestimonials],
           ["6","Contact","./conatact",scrollToContact],
         ].map(([key, name, link, scroll]) => (
-          <div key={key} onClick={scroll} className="h-auto w-auto font-normal px-2">{name}</div>
+          <div key={key} onClick={scroll} className="h-auto w-auto font-normal px-4 py-2 cursor-pointer rounded-md
+          hover:bg-gray-100">{name}</div>
         ))}
-
-        <Link href="/resume.pdf" download={true} className="h-auto w-auto py-2 px-4 rounded-md text-white bg-orange-500">Dowmload CV</Link>
+        <Link href="./resume.pdf" download={true} className="h-auto w-auto py-2 px-4 rounded-md text-white bg-orange-500 cursor-pointer">Dowmload CV</Link>
       </div>
 
     </nav>

@@ -21,21 +21,21 @@ const scrollToServices = () =>{
 }
 
 const scrollToProjects = () =>{
-  window.scrollTo({ top: 1550, behavior: 'smooth', })
+  window.scrollTo({ top: 1700, behavior: 'smooth', })
 }
 
 const scrollToTestimonials = () =>{
-  window.scrollTo({ top: 2200, behavior: 'smooth', })
+  window.scrollTo({ top: 2300, behavior: 'smooth', })
 }
 
 const scrollToContact = () =>{
-  window.scrollTo({ top: 2700, behavior: 'smooth', })
+  window.scrollTo({ top: 2800, behavior: 'smooth', })
 }
 
   return (
     <>
     <footer className="h-[40vh] w-full">
-    <div className="h-[40vh] w-full bg-gray-300 px-8 grid grid-cols-1 grid-rows-4 place-items-center">  
+    <div className="h-[40vh] w-full bg-gray-100 px-8 grid grid-cols-1 grid-rows-4 place-items-center">  
      <p className="h-auto w-full text-4xl text-orange-500 font-semibold flex justify-center items-center">Sainath.io</p>
 
      <div className="h-[10vh] w-full flex justify-evenly items-center">
@@ -55,7 +55,7 @@ const scrollToContact = () =>{
       {[
           ["1",faGithub,"https://github.com/sainathkamble"],
           ["2",faXTwitter,"https://x.com/sainathio"],
-          ["3",faLinkedin,"www.linkedin.com/in/sainathkamble"],
+          ["3",faLinkedin,"https://www.linkedin.com/in/sainathkamble"],
           ["4",faInstagram,"https://www.instagram.com/sainath.io/"],
         ].map(([key, icon, link]) => (
           <Link key={key} href={link} className="h-[5vh] w-auto text-black">

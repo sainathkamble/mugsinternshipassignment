@@ -18,7 +18,7 @@ export const Projects = () => {
           ["4","Web Design"],
           ["5","Graphics Design"],
           ].map(([key, value]) => (
-            <button key={key} className="h-auto w-auto px-4 py-2 rounded-md text-black bg-gray-300 hover:text-white hover:bg-orange-500 flex justify-center items-center">
+            <button key={key} className="h-auto w-auto px-4 py-2 rounded-md text-black bg-gray-100 hover:text-white hover:bg-orange-500 flex justify-center items-center">
             {value}</button>
           ))
         }
@@ -37,8 +37,8 @@ export const Projects = () => {
                 <Image src={imgLink} alt="Website Image" width={100} height={100}
                 className="full w-full bg-cover rounded-t-md" />
               </Link>
-              <p className="h-auto w-full pl-4 py-2 bg-gray-300 text-orange-500">{tag}</p>
-              <p className="h-auto w-full pl-4 py-2 bg-gray-300 font-semibold rounded-b-md">{title}</p>
+              <p className="h-auto w-full pl-4 py-2 bg-gray-100 text-orange-500">{tag}</p>
+              <p className="h-auto w-full pl-4 py-2 bg-gray-100 font-semibold rounded-b-md">{title}</p>
               </div>
             </div>
           ))}

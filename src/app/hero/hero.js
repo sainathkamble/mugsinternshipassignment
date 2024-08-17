@@ -8,7 +8,7 @@ import { faGithub , faInstagram, faLinkedin , faXTwitter } from "@fortawesome/fr
 export const Hero = () => {
   return (
     <div className="h-[80vh] w-full px-10 py-10 flex justify-evenly items-center flex-grow">
-      <div className="h-full w-1/2 p-4 text-black sm:w-full md:w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2">
+      <div className="h-full w-1/2 text-black sm:w-full md:w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2">
         <p className="h-auto w-full m-3 text-lg">Hi I am,</p>
         <p className="h-auto w-full m-3 text-xl text-orange-500">Sainath Kamble</p>
         <p className="h-auto w-full m-3 pl-10 text-4xl flex justify-start items-center">Full Stack Software</p>
@@ -17,19 +17,19 @@ export const Hero = () => {
         <button className="h-auto w-auto m-3 px-2 py-2 rounded-md bg-orange-500 text-white flex justify-center items-center">Hire me</button>
       </div>
 
-      <div className="h-full w-1/2 p-4 sm:w-full md:w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2">
+      <div className="h-full w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2">
         <Image src="/image.jpeg" alt="Profile Image" height={100} width={100} 
-        className="h-3/4 w-3/4 rounded-full mx-auto bg-cover" />
+        className="h-5/6 w-3/5 rounded-full mx-auto bg-cover" />
 
-       <div className="h-[10vh] w-1/2 mx-auto flex justify-evenly items-center">
+       <div className="h-1/6 w-1/2 mx-auto flex justify-evenly items-center">
        {[
           ["1",faGithub,"https://github.com/sainathkamble"],
           ["2",faXTwitter,"https://x.com/sainathio"],
-          ["3",faLinkedin,"www.linkedin.com/in/sainathkamble"],
+          ["3",faLinkedin,"https://www.linkedin.com/in/sainathkamble"],
           ["4",faInstagram,"https://www.instagram.com/sainath.io/"],
          ].map(([key, icon, link]) => (
-          <Link key={key} href={link} className="h-[5vh] w-auto text-black">
-            <FontAwesomeIcon icon={icon} className="h-[5vh] w-auto"/>
+          <Link key={key} href={link} className="h-full w-auto text-black p-4 hover:bg-gray-100 rounded-md">
+            <FontAwesomeIcon icon={icon} className="h-full w-auto"/>
           </Link>
         ))}
        </div>
